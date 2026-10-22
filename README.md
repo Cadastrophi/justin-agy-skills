@@ -7,22 +7,19 @@ the smaller set worth loading into Antigravity.
 
 ## Install
 
-Clone once, outside any scanned skills folder, then link the skills into
-Antigravity's skill folder (`~/.gemini/config/skills`):
+Install with the [Skills CLI](https://github.com/vercel-labs/skills) on
+Windows, macOS, or Linux (Node.js required):
 
 ```sh
-# Windows (creates junctions)
-.\install.ps1
-
-# macOS / Linux (creates symlinks)
-./install.sh
+npx skills add Cadastrophi/justin-agy-skills -g -a antigravity -s '*' -y --copy
 ```
 
-Re-run after adding skills; existing links pick up `git pull` changes
-automatically. If a skill already exists in the target as a real folder, the
-installer skips it and reports `CONFLICT`. Pass `-Replace` / `--replace` to
-move the old copy to `~/.justin-agy-skills/backups/` and link this repo's
-version instead.
+This copies every skill into `~/.agents/skills`. Drop `-s '*'` to pick skills
+interactively, or pass names such as `-s tdd grilling`. Update later with
+`npx skills update -g`.
+
+The repository is private, so the machine needs GitHub access to it first
+(for example `gh auth login`).
 
 ## Skills
 
@@ -34,7 +31,8 @@ version instead.
 | Skill finder | `find-skills` |
 | Agent debugging and council | `agent-introspection-debugging`, `council` |
 | Emil Kowalski design and motion | `animate`, `animation-vocabulary`, `apple-design`, `ask-sonner`, `emil-design-eng`, `emil-ui-prototype`, `find-animation-opportunities`, `improve-animations`, `pick-ui-library`, `review-animations` |
-| Taste | `design-taste-frontend`, `gpt-taste`, `high-end-visual-design`, `stitch-design-taste`, `minimalist-ui`, `industrial-brutalist-ui`, `redesign-existing-projects`, `image-to-code`, `full-output-enforcement` |
+| Motion implementation (React / Next.js) | `motion-foundations`, `motion-patterns`, `motion-advanced` |
+| Taste | `design-taste-frontend`, `high-end-visual-design`, `stitch-design-taste`, `minimalist-ui`, `industrial-brutalist-ui`, `redesign-existing-projects`, `image-to-code`, `full-output-enforcement` |
 | UI/UX systems | `ui-ux-pro-max`, `ui-styling`, `design-system`, `design` |
 | Frontend design and polish | `frontend-design-direction`, `justin-design`, `impeccable`, `make-interfaces-feel-better`, `frontend-a11y`, `mobile-native`, `animation-performance`, `break-ui` |
 | Security | `security-audit` (Cloudflare) |
