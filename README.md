@@ -25,15 +25,14 @@ The repository is private, so the machine needs GitHub access to it first
 
 | Group | Skills |
 | --- | --- |
-| Antigravity workflows | `gsd`, `ralph-loop`, `roo-mode-orchestrator`, `coderabbit-review` |
+| Antigravity workflows | `ralph-loop`, `coderabbit-review` |
 | TDD and grilling | `tdd`, `grilling`, `grill-with-docs` |
-| Matt Pocock engineering | `codebase-design`, `diagnosing-bugs`, `domain-modeling`, `handoff`, `improve-codebase-architecture`, `prototype`, `research`, `resolving-merge-conflicts`, `setup-matt-pocock-skills`, `to-spec`, `to-tickets`, `triage`, `wait-what`, `wizard`, `writing-for-agents` |
+| Matt Pocock engineering | `codebase-design`, `diagnosing-bugs`, `domain-modeling`, `handoff`, `improve-codebase-architecture`, `prototype`, `research`, `resolving-merge-conflicts`, `setup-matt-pocock-skills`, `to-spec`, `to-tickets`, `wait-what`, `writing-for-agents` |
 | Skill finder | `find-skills` |
 | Agent debugging and council | `agent-introspection-debugging`, `council` |
-| Emil Kowalski design and motion | `animate`, `animation-vocabulary`, `apple-design`, `ask-sonner`, `emil-design-eng`, `emil-ui-prototype`, `find-animation-opportunities`, `improve-animations`, `pick-ui-library`, `review-animations` |
-| Motion implementation (React / Next.js) | `motion-foundations`, `motion-patterns`, `motion-advanced` |
-| Taste | `design-taste-frontend`, `high-end-visual-design`, `stitch-design-taste`, `minimalist-ui`, `industrial-brutalist-ui`, `redesign-existing-projects`, `image-to-code`, `full-output-enforcement` |
-| UI/UX systems | `ui-ux-pro-max`, `ui-styling`, `design-system`, `design` |
+| Emil Kowalski design and motion | `animate`, `animation-vocabulary`, `apple-design`, `emil-design-eng`, `emil-ui-prototype`, `find-animation-opportunities`, `improve-animations`, `pick-ui-library`, `review-animations` |
+| Taste | `design-taste-frontend`, `full-output-enforcement` |
+| Design tokens | `design-system` |
 | Frontend design and polish | `frontend-design-direction`, `justin-design`, `impeccable`, `make-interfaces-feel-better`, `frontend-a11y`, `mobile-native`, `animation-performance`, `break-ui` |
 | Security | `security-audit` (Cloudflare) |
 | Browser verification | `browser-qa` |
