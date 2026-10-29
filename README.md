@@ -1,10 +1,22 @@
 # Justin Antigravity Skills
 
 A small skill set for learning agentic engineering in Antigravity. The skills
-follow one workflow: grill the idea, write down the intent, turn it into a
-spec, design it, build it in a loop, verify it, and debug it when it breaks.
-The full personal catalog lives in
+follow one workflow: grill the idea until the intent is written down in
+PRODUCT.md, build it in a loop until every "Done when" box is ticked, and
+debug it when it breaks. The full personal catalog lives in
 [justin-skills](https://github.com/Cadastrophi/justin-skills).
+
+## Workshop
+
+[`workshop/agentic-engineering-deck.html`](workshop/agentic-engineering-deck.html)
+is the slide deck for the workshop, and doubles as a manual. Download it and
+open it in any browser; it is one self-contained file that also works offline.
+
+- **Contents:** press `C` on any slide, or use the ☰ Contents link.
+- **Prompts:** every box with a blue top bar is a prompt, with a Copy button.
+  The whole method is two prompts: `/grill-with-docs`, then `/ralph-loop`.
+- **Skill reference:** the last slides list all 29 skills and when to use each.
+- **Keys:** arrow keys to move, `N` for presenter notes, `F` for fullscreen.
 
 ## Install
 
@@ -60,5 +72,18 @@ which is a separate thing.
 `coderabbit-review` does not call the CodeRabbit service. It is a free,
 prompt-only four-pass review checklist modeled on CodeRabbit's review style,
 and is this repo's only general code-review skill.
+
+## Going further
+
+- `to-spec` turns an agreed intent into a full spec for bigger projects. It
+  runs `setup-matt-pocock-skills` the first time; choose local markdown if you
+  don't use an issue tracker.
+- [mattpocock/skills](https://github.com/mattpocock/skills): the source of
+  the grilling, spec, TDD and debugging skills here, plus many more for
+  planning and refactoring larger codebases.
+- [poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) (in
+  Cursor's plugins repo): engineering principles written as skills, such as
+  `principle-prove-it-works`, `principle-guard-the-context-window` and
+  `principle-fix-root-causes`, plus workflows like `interrogate` and `swarm`.
 
 Sources and licenses are listed in [SOURCES.md](SOURCES.md).
