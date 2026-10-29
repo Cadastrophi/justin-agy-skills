@@ -14,4 +14,6 @@ upstream ships one).
 | `security-audit` | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) at `c1c8a8c` via justin-skills | `licenses/cloudflare-security-audit-skill-LICENSE` (MIT) |
 | `justin-design` | [Cadastrophi/justin-design-skill](https://github.com/Cadastrophi/justin-design-skill) | Personal |
 | ECC skills (`agent-introspection-debugging`, `council`, `frontend-design-direction`, `make-interfaces-feel-better`, `browser-qa`) | Everything Claude Code plugin 2.2.3 | `licenses/ecc-LICENSE` (MIT) |
+| `humanizer` | [blader/humanizer](https://github.com/blader/humanizer) at `8c307f3` via justin-skills | `licenses/humanizer-LICENSE` (MIT) |
+| `unslop` | [poteto's pstack](https://github.com/cursor/plugins/tree/main/pstack) in cursor/plugins at `1b6d44f` via justin-skills | `licenses/unslop-LICENSE` |
 | `ralph-loop`, `coderabbit-review` | Local Antigravity skills from `~/.gemini/config/skills` | Personal |

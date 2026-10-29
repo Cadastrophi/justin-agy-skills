@@ -51,6 +51,7 @@ instead.
 | Design | `impeccable`, `justin-design`, `frontend-design-direction`, `make-interfaces-feel-better`, `design-taste-frontend`, `apple-design`, `emil-design-eng` |
 | Motion | `animate`, `improve-animations`, `review-animations`, `pick-ui-library`, `emil-ui-prototype` |
 | Verify and security | `browser-qa`, `coderabbit-review`, `security-audit` |
+| Writing | `humanizer`, `unslop` |
 | Skill finder | `find-skills` |
 
 `research` is a skill. Antigravity also has a built-in `research` subagent,
