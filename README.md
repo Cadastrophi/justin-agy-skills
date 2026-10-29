@@ -1,41 +1,60 @@
 # Justin Antigravity Skills
 
-A curated skill set for Antigravity: engineering workflow, agent debugging,
-and design. The full personal catalog lives in
-[justin-skills](https://github.com/Cadastrophi/justin-skills); this repo is
-the smaller set worth loading into Antigravity.
+A small skill set for learning agentic engineering in Antigravity. The skills
+follow one workflow: grill the idea, write down the intent, turn it into a
+spec, design it, build it in a loop, verify it, and debug it when it breaks.
+The full personal catalog lives in
+[justin-skills](https://github.com/Cadastrophi/justin-skills).
 
 ## Install
 
-Install with the [Skills CLI](https://github.com/vercel-labs/skills) on
-Windows, macOS, or Linux (Node.js required):
+### Ask Antigravity to do it
 
-```sh
-npx skills add Cadastrophi/justin-agy-skills -g -a antigravity -s '*' -y --copy
+Paste this into an Antigravity conversation:
+
+```text
+Install the agent skills from https://github.com/Cadastrophi/justin-agy-skills
+for Antigravity by following the "For agents" steps in its README, then list
+what you installed.
 ```
 
-This copies every skill into `~/.agents/skills`. Drop `-s '*'` to pick skills
-interactively, or pass names such as `-s tdd grilling`. Update later with
-`npx skills update -g`.
+A skill is a set of instructions written by someone else. Skim a skill's
+`SKILL.md` before you rely on it.
 
-The repository is private, so the machine needs GitHub access to it first
-(for example `gh auth login`).
+### For agents
+
+1. Clone `https://github.com/Cadastrophi/justin-agy-skills` into a temporary
+   folder.
+2. Copy every folder inside its `skills/` folder into Antigravity's global
+   skills folder, `~/.gemini/config/skills/` (on Windows,
+   `%USERPROFILE%\.gemini\config\skills\`). Create the folder if it does not
+   exist. Replace any folder with the same name.
+3. Delete the temporary clone.
+4. List the installed skill names and tell the user to start a new
+   conversation so Antigravity loads them.
+
+### By hand
+
+Copy the folders in `skills/` into `~/.gemini/config/skills/` yourself. To
+install into one project only, copy them into `<project>/.agents/skills/`
+instead.
 
 ## Skills
 
-| Group | Skills |
+| Stage | Skills |
 | --- | --- |
-| Antigravity workflows | `ralph-loop`, `coderabbit-review` |
-| TDD and grilling | `tdd`, `grilling`, `grill-with-docs` |
-| Matt Pocock engineering | `codebase-design`, `diagnosing-bugs`, `domain-modeling`, `handoff`, `improve-codebase-architecture`, `prototype`, `research`, `resolving-merge-conflicts`, `setup-matt-pocock-skills`, `to-spec`, `to-tickets`, `wait-what`, `writing-for-agents` |
+| Grill and intent | `grilling`, `grill-with-docs`, `domain-modeling` |
+| Spec | `to-spec`, `setup-matt-pocock-skills` |
+| Build loop | `ralph-loop`, `tdd` |
+| Research | `research` |
+| Debugging and decisions | `diagnosing-bugs`, `agent-introspection-debugging`, `council` |
+| Design | `impeccable`, `justin-design`, `frontend-design-direction`, `make-interfaces-feel-better`, `design-taste-frontend`, `apple-design`, `emil-design-eng` |
+| Motion | `animate`, `improve-animations`, `review-animations`, `pick-ui-library`, `emil-ui-prototype` |
+| Verify and security | `browser-qa`, `coderabbit-review`, `security-audit` |
 | Skill finder | `find-skills` |
-| Agent debugging and council | `agent-introspection-debugging`, `council` |
-| Emil Kowalski design and motion | `animate`, `animation-vocabulary`, `apple-design`, `emil-design-eng`, `emil-ui-prototype`, `find-animation-opportunities`, `improve-animations`, `pick-ui-library`, `review-animations` |
-| Taste | `design-taste-frontend`, `full-output-enforcement` |
-| Design tokens | `design-system` |
-| Frontend design and polish | `frontend-design-direction`, `justin-design`, `impeccable`, `make-interfaces-feel-better`, `frontend-a11y`, `mobile-native`, `animation-performance`, `break-ui` |
-| Security | `security-audit` (Cloudflare) |
-| Browser verification | `browser-qa` |
+
+`research` is a skill. Antigravity also has a built-in `research` subagent,
+which is a separate thing.
 
 `coderabbit-review` does not call the CodeRabbit service. It is a free,
 prompt-only four-pass review checklist modeled on CodeRabbit's review style,
